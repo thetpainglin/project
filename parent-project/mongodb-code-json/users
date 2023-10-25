@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "6523ceeff1ec823c749bc098"
+  },
+  "username": "khin chaw",
+  "email": "khin@gmail.com",
+  "password": "$2a$12$qsFDFlmeiOT66ELTIG/uou7eI1uq/r3CdkwA1r.u6947kHep6DeGe",
+  "roles": [
+    {
+      "role": "ADMIN"
+    }
+  ],
+  "_class": "com.turing.backend.model.User"
+},{
+  "_id": {
+    "$oid": "652783a8e85a9e3ab72f2610"
+  },
+  "username": "admin",
+  "email": "admin@gmail.com",
+  "password": "$2a$12$2AAGLXy1P9wOxQn1UCplHu0SQ9oywNRuWh3saFWCJuGh5dqeahmMy",
+  "roles": [
+    {
+      "role": "ADMIN"
+    }
+  ],
+  "_class": "com.turing.backend.model.User"
+}]

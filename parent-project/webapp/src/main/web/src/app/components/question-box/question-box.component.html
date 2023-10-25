@@ -1,0 +1,11 @@
+<div class="question-box" [class.border]="haveBorder" [class]="{name : false, age : false}">
+  <label for="item-input">Add an item : </label>
+  <input type="text" id="item-input" #newItem value="{{value}}"/>
+  <button type="button" (click)="btnAddClick(newItem.value)">Add</button>
+  <button type="button" class="btn btn-primary"
+          [disabled]="updateDisable"
+          (click)="updateItemClick(newItem.value)"
+          >Update</button>
+          <input (keydown.shift.t)="onKeydown($event)"/>
+  <p childItem="parent">{{childItem}}</p>
+</div>

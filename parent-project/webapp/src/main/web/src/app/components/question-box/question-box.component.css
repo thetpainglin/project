@@ -1,0 +1,10 @@
+.border{
+  background-color: lightslategray;
+  padding: 10px ;
+  color: #fafbfc;
+  border-radius: 5px;
+}
+.name{
+  color: red;
+  background-color: #1976d2;
+}

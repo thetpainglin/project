@@ -1,0 +1,969 @@
+{
+	"info": {
+		"_postman_id": "e3a53e3a-8380-46b7-b437-e7d9b88854a0",
+		"name": "ecomerce_projectWithJavaEE Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "getAllProducts",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getAllProducts",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8080/api/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 12 Sep 2023 08:53:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"62dd17eeeecc1c50d2eb335f\",\n        \"name\": \"headphone\",\n        \"image\": \"/images/headPhone_5.png\",\n        \"price\": 30,\n        \"quantity\": 1,\n        \"details\": \"This headphone has beauty and smart style. This will give you more smart style!\"\n    },\n    {\n        \"id\": \"62dd1857eecc1c50d2eb3361\",\n        \"name\": \"Love Shoe\",\n        \"image\": \"/images/shoe_1.png\",\n        \"price\": 30,\n        \"quantity\": 1,\n        \"details\": \"This shoe is so nice .Do you have plan to go interesting place ? Don't forget to take this shoe.\"\n    },\n    {\n        \"id\": \"62dd18b6eecc1c50d2eb3363\",\n        \"name\": \"Favour shoes\",\n        \"image\": \"/images/shoe_6.png\",\n        \"price\": 25,\n        \"quantity\": 1,\n        \"details\": \"Where ever you go , you need this shoe .Aspecially this shoe more needed!\"\n    },\n    {\n        \"id\": \"62f1ea66ff761c4fc93b2a37\",\n        \"name\": \"nice bluetooth\",\n        \"image\": \"/images/bluetooth_1.png\",\n        \"price\": 30,\n        \"quantity\": 1,\n        \"details\": \"Excellent bluetooth for you . So nice to listen !\"\n    },\n    {\n        \"id\": \"62f1ec51ff761c4fc93b2a39\",\n        \"name\": \"most use product\",\n        \"image\": \"/images/shoe_4.png\",\n        \"price\": 30,\n        \"quantity\": 1,\n        \"details\": \"Many people are using this products ! So you can use to update your style!\"\n    },\n    {\n        \"id\": \"650026f3c9609d5782d4dfd8\",\n        \"name\": \"Bluetooth Slow\",\n        \"image\": \"/images/bluetooth_2.png\",\n        \"price\": 25,\n        \"quantity\": 2,\n        \"details\": \"Good bluetooth!\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "NewProduct",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\" : \"Bluetooth Delete Product\",\n    \"image\" : \"/images/bluetooth_7.png\",\n    \"price\" : 25,\n    \"quantity\" : 1,\n    \"details\" : \"Good bluetooth!\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "NewProduct",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\" : \"Bluetooth Slow\",\n    \"image\" : \"/images/bluetooth_2.png\",\n    \"price\" : 25,\n    \"quantity\" : 2,\n    \"details\" : \"Good bluetooth!\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 12 Sep 2023 08:53:29 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"65002709c9609d5782d4dfd9\",\n    \"name\": \"Bluetooth Slow\",\n    \"image\": \"/images/bluetooth_2.png\",\n    \"price\": 25,\n    \"quantity\": 2,\n    \"details\": \"Good bluetooth!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "DeleteProduct",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products/65002c1d60d2ff21350494f6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"65002c1d60d2ff21350494f6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateProduct",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\" : \"Bluetooth Updated\",\n    \"image\" : \"/images/bluetooth_5.png\",\n    \"price\" : 25,\n    \"quantity\" : 3,\n    \"details\" : \"Good bluetooth Latest Model!\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products/650026f3c9609d5782d4dfd8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"650026f3c9609d5782d4dfd8"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "UpdateProduct",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\" : \"Bluetooth Updated\",\n    \"image\" : \"/images/bluetooth_5.png\",\n    \"price\" : 25,\n    \"quantity\" : 3,\n    \"details\" : \"Good bluetooth Latest Model!\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/products/650026f3c9609d5782d4dfd8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"products",
+										"650026f3c9609d5782d4dfd8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 12 Sep 2023 09:06:46 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"650026f3c9609d5782d4dfd8\",\n    \"name\": \"Bluetooth Updated\",\n    \"image\": \"/images/bluetooth_5.png\",\n    \"price\": 25,\n    \"quantity\": 3,\n    \"details\": \"Good bluetooth Latest Model!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "GetProductByName",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOlt7ImF1dGhvcml0eSI6IkFETUlOIn1dLCJpYXQiOjE2OTcwODg0NjIsImV4cCI6MTY5NzA5MjA2Mn0.IztCaROWS9rzM3WiHxaWrQih1khCtOF4BE_CelaoU6A",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/products/name?name=headphone",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"name"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "headphone"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GetProductByName",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOlt7ImF1dGhvcml0eSI6IkFETUlOIn1dLCJpYXQiOjE2OTcwODg0NjIsImV4cCI6MTY5NzA5MjA2Mn0.IztCaROWS9rzM3WiHxaWrQih1khCtOF4BE_CelaoU6A",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8080/api/products/name?name=headphone",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"products",
+										"name"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "headphone"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 12 Oct 2023 05:33:33 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"650435714c423b15e4134f87\",\n        \"name\": \"headphone\",\n        \"image\": \"../assets/images/headPhone_5.png\",\n        \"price\": 30,\n        \"quantity\": 1,\n        \"details\": \"This headphone has beauty and smart style. This will give you more smart style!\"\n    },\n    {\n        \"id\": \"6505197abf68932285f70346\",\n        \"name\": \"headphone\",\n        \"image\": \"../assets/images/headPhone_2.png\",\n        \"price\": 30,\n        \"quantity\": 2,\n        \"details\": \"This headphone has beauty and smart style. This will give you more smart style!\"\n    },\n    {\n        \"id\": \"65051a7ebf68932285f7034a\",\n        \"name\": \"headphone\",\n        \"image\": \"../assets/images/shoe_5.png\",\n        \"price\": 30,\n        \"quantity\": 2,\n        \"details\": \"This shoe is very beautiful. Most people use for thier smart!\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "GetProductById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products/62dd17eeeecc1c50d2eb335f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"62dd17eeeecc1c50d2eb335f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Banner",
+			"item": [
+				{
+					"name": "AddBanner",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"image\" : \"/images/bluetooth_1.png\",\n    \"buttonText\" : \"Show the best shoe deleted Banner\",\n    \"product\" : \"Shoe Delete\",\n    \"desc\" : \"The best shoe in this season\",\n    \"smallText\" : \"Light Shoe\",\n    \"midText\" : \"Good Shoe\",\n    \"largeText1\" : \"Good Shoe Text 1\",\n    \"largeText2\" : \"Good Shoe Text 2\",\n    \"discount\" : \"20%\",\n    \"saleTime\" : \"Dec 7 to Feb 9\",\n    \"product_id\" : {\n      \"name\": \"nice bluetooth Deleted Product\",\n        \"image\": \"/images/bluetooth_1.png\",\n        \"price\": 30,\n        \"quantity\": 1,\n        \"details\": \"Excellent bluetooth for you . So nice to listen !\"\n    }\n   \n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/banner",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"banner"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "AddBannerResponse",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"image\" : \"/images/shoe_5.png\",\n    \"buttonText\" : \"Show the best shoe\",\n    \"product\" : \"Shoe\",\n    \"desc\" : \"The best shoe in this season\",\n    \"smallText\" : \"Light Shoe\",\n    \"midText\" : \"Good Shoe\",\n    \"largeText1\" : \"Good Shoe Text 1\",\n    \"largeText2\" : \"Good Shoe Text 2\",\n    \"discount\" : \"20%\",\n    \"saleTime\" : \"Dec 7 to Feb 9\",\n    \"product_id\" : {\n       \"name\": \"headphone\",\n        \"image\": \"/images/headPhone_4.png\",\n        \"price\": 30,\n        \"quantity\": 2,\n        \"details\": \"This headphone has beauty and smart style. This will give you more smart style!\"\n    }\n   \n}"
+								},
+								"url": {
+									"raw": "localhost:8080/api/banner",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"banner"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 16 Sep 2023 03:01:18 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"65051a7ebf68932285f7034b\",\n    \"image\": \"/images/shoe_5.png\",\n    \"buttonText\": \"Show the best shoe\",\n    \"product\": \"Shoe\",\n    \"desc\": \"The best shoe in this season\",\n    \"smallText\": \"Light Shoe\",\n    \"midText\": \"Good Shoe\",\n    \"largeText1\": \"Good Shoe Text 1\",\n    \"largeText2\": \"Good Shoe Text 2\",\n    \"discount\": \"20%\",\n    \"saleTime\": \"Dec 7 to Feb 9\",\n    \"product_id\": {\n        \"id\": \"65051a7ebf68932285f7034a\",\n        \"name\": \"headphone\",\n        \"image\": \"/images/headPhone_4.png\",\n        \"price\": 30,\n        \"quantity\": 2,\n        \"details\": \"This headphone has beauty and smart style. This will give you more smart style!\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "GetAllBanner",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/api/banner",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"banner"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GetAllBannerExample",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/banner",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"banner"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 16 Sep 2023 04:21:25 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"65051a7ebf68932285f7034b\",\n        \"image\": \"/images/shoe_5.png\",\n        \"buttonText\": \"Show the best shoe\",\n        \"product\": \"Shoe\",\n        \"desc\": \"The best shoe in this season\",\n        \"smallText\": \"Light Shoe\",\n        \"midText\": \"Good Shoe\",\n        \"largeText1\": \"Good Shoe Text 1\",\n        \"largeText2\": \"Good Shoe Text 2\",\n        \"discount\": \"20%\",\n        \"saleTime\": \"Dec 7 to Feb 9\",\n        \"product_id\": {\n            \"id\": \"65051a7ebf68932285f7034a\",\n            \"name\": \"headphone\",\n            \"image\": \"/images/headPhone_4.png\",\n            \"price\": 30,\n            \"quantity\": 2,\n            \"details\": \"This headphone has beauty and smart style. This will give you more smart style!\"\n        }\n    },\n    {\n        \"id\": \"65052c426062b36b99c7f7a5\",\n        \"image\": \"/images/shoe_1.png\",\n        \"buttonText\": \"Show the best shoe\",\n        \"product\": \"Shoe\",\n        \"desc\": \"The best shoe in this season\",\n        \"smallText\": \"Light Shoe\",\n        \"midText\": \"Good Shoe\",\n        \"largeText1\": \"Good Shoe Text 1\",\n        \"largeText2\": \"Good Shoe Text 2\",\n        \"discount\": \"20%\",\n        \"saleTime\": \"Dec 7 to Feb 9\",\n        \"product_id\": {\n            \"id\": \"65052c426062b36b99c7f7a4\",\n            \"name\": \"Love Shoe\",\n            \"image\": \"/images/shoe_1.png\",\n            \"price\": 30,\n            \"quantity\": 1,\n            \"details\": \"This shoe is so nice .Do you have plan to go interesting place ? Don't forget to take this shoe.\"\n        }\n    },\n    {\n        \"id\": \"65052c736062b36b99c7f7a7\",\n        \"image\": \"/images/shoe_6.png\",\n        \"buttonText\": \"Show the best shoe\",\n        \"product\": \"Shoe\",\n        \"desc\": \"The best shoe in this season\",\n        \"smallText\": \"Light Shoe\",\n        \"midText\": \"Good Shoe\",\n        \"largeText1\": \"Good Shoe Text 1\",\n        \"largeText2\": \"Good Shoe Text 2\",\n        \"discount\": \"20%\",\n        \"saleTime\": \"Dec 7 to Feb 9\",\n        \"product_id\": {\n            \"id\": \"65052c736062b36b99c7f7a6\",\n            \"name\": \"Favour shoes\",\n            \"image\": \"/images/shoe_6.png\",\n            \"price\": 25,\n            \"quantity\": 1,\n            \"details\": \"Where ever you go , you need this shoe .Aspecially this shoe more needed!\"\n        }\n    },\n    {\n        \"id\": \"65052caf6062b36b99c7f7a9\",\n        \"image\": \"/images/bluetooth_1.png\",\n        \"buttonText\": \"Show the best shoe\",\n        \"product\": \"Shoe\",\n        \"desc\": \"The best shoe in this season\",\n        \"smallText\": \"Light Shoe\",\n        \"midText\": \"Good Shoe\",\n        \"largeText1\": \"Good Shoe Text 1\",\n        \"largeText2\": \"Good Shoe Text 2\",\n        \"discount\": \"20%\",\n        \"saleTime\": \"Dec 7 to Feb 9\",\n        \"product_id\": {\n            \"id\": \"65052caf6062b36b99c7f7a8\",\n            \"name\": \"nice bluetooth\",\n            \"image\": \"/images/bluetooth_1.png\",\n            \"price\": 30,\n            \"quantity\": 1,\n            \"details\": \"Excellent bluetooth for you . So nice to listen !\"\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "UpdateBanner",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"image\": \"/images/shoe_5.png\",\n        \"buttonText\": \"Show the best shoe Updated\",\n        \"product\": \"Shoe Updated\",\n        \"desc\": \"The best shoe in this season\",\n        \"smallText\": \"Light Shoe\",\n        \"midText\": \"Good Shoe\",\n        \"largeText1\": \"Good Shoe Text 1\",\n        \"largeText2\": \"Good Shoe Text 2\",\n        \"discount\": \"25%\",\n        \"saleTime\": \"Dec 7 to Feb 9\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/banner/65051a7ebf68932285f7034b",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"banner",
+								"65051a7ebf68932285f7034b"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "UpdateBannerExample",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"image\": \"/images/shoe_5.png\",\n        \"buttonText\": \"Show the best shoe Updated\",\n        \"product\": \"Shoe Updated\",\n        \"desc\": \"The best shoe in this season\",\n        \"smallText\": \"Light Shoe\",\n        \"midText\": \"Good Shoe\",\n        \"largeText1\": \"Good Shoe Text 1\",\n        \"largeText2\": \"Good Shoe Text 2\",\n        \"discount\": \"25%\",\n        \"saleTime\": \"Dec 7 to Feb 9\"\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/api/banner/65051a7ebf68932285f7034b",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"banner",
+										"65051a7ebf68932285f7034b"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 16 Sep 2023 04:44:45 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"65051a7ebf68932285f7034b\",\n    \"image\": \"/images/shoe_5.png\",\n    \"buttonText\": \"Show the best shoe Updated\",\n    \"product\": \"Shoe Updated\",\n    \"desc\": \"The best shoe in this season\",\n    \"smallText\": \"Light Shoe\",\n    \"midText\": \"Good Shoe\",\n    \"largeText1\": \"Good Shoe Text 1\",\n    \"largeText2\": \"Good Shoe Text 2\",\n    \"discount\": \"25%\",\n    \"saleTime\": \"Dec 7 to Feb 9\",\n    \"product_id\": {\n        \"id\": \"65051a7ebf68932285f7034a\",\n        \"name\": \"headphone\",\n        \"image\": \"/images/headPhone_4.png\",\n        \"price\": 30,\n        \"quantity\": 2,\n        \"details\": \"This headphone has beauty and smart style. This will give you more smart style!\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "DeleteBanner",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/api/banner/6505347f7536c543276fe587",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"banner",
+								"6505347f7536c543276fe587"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\" : \"admin\",\n    \"email\" : \"admin@gmail.com\",\n    \"password\" : \"admin\",\n    \"roles\" : [{\"role\" : \"ADMIN\"}]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\" : \"admin\",\n    \"email\" : \"admin@gmail.com\",\n    \"password\" : \"admin\",\n    \"roles\" : [{\"role\" : \"ADMIN\"}]\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "172"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 12 Oct 2023 05:27:04 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOlt7ImF1dGhvcml0eSI6IkFETUlOIn1dLCJpYXQiOjE2OTcwODg0MjQsImV4cCI6MTY5NzA5MjAyNH0.uRFL3q7S0cwns2_nmnS39Dcv66srBeTFb3zALY5Eg0Y"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\" : \"admin\",\n    \"password\" : \"admin\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\" : \"admin\",\n    \"password\" : \"admin\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 12 Oct 2023 05:27:42 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOlt7ImF1dGhvcml0eSI6IkFETUlOIn1dLCJpYXQiOjE2OTcwODg0NjIsImV4cCI6MTY5NzA5MjA2Mn0.IztCaROWS9rzM3WiHxaWrQih1khCtOF4BE_CelaoU6A\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

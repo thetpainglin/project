@@ -1,0 +1,8 @@
+<div appHilight>
+  now time short {{now | date : 'short'}}<br>
+  medium {{now | date : 'medium'}}        <br>
+  short date {{now | date : 'shortDate'}}<br>
+  full date {{now | date : 'fullDate'}}<br>
+  <div [ngClass]="isSpecial ? 'special' : 'bad'">ngClass green or red </div>
+  <button type="button" (click)="clickButton()">Click Me</button>
+</div>

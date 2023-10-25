@@ -1,0 +1,21 @@
+<div class="footer-banner-container">
+  <div class="banner-desc">
+    <div class="left">
+      <p>{{footerBanner[2].discount}}</p>
+      <h3 style="font-size: 20px">
+        {{footerBanner[2].largeText1}}</h3>
+      <h3 style="font-size: 60px; margin-top: 20px">{{footerBanner[2].product}}</h3>
+      <p>{{footerBanner[2].saleTime}}</p>
+    </div>
+    <div class="right">
+      <p>{{footerBanner[2].smallText}}</p>
+      <h3 style="font-size: 40px; margin-top: 20px">{{footerBanner[2].midText}}</h3>
+      <p>{{footerBanner[2].desc}}</p>
+
+      <button type="button" (click)="BtnClickToDetails(footerBanner[2].product_id.id)">{{footerBanner[2].buttonText}}</button>
+
+      <img  [src]="footerBanner[2].image" alt="no photo" class="footer-banner-image" width="300" height="300"/>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div >
+  <table class="table table-bordered container-lg" >
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Year</th>
+      <th>Director</th>
+      <th>Actioin</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr *ngFor="let movie of movies; index as i">
+      <td>{{movie.id}}</td>
+      <td>{{movie.name}}</td>
+      <td>{{movie.year}}</td>
+      <td>{{movie.director}}</td>
+      <td>
+      </td>
+    </tr>
+
+    </tbody>
+  </table>
+</div>

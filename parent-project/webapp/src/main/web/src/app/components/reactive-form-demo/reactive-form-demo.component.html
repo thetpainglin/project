@@ -1,0 +1,84 @@
+
+<button type="button"
+        class="btn btn-primary"
+        (click)="newMovieClick()">new Movie</button>
+
+<ng-template #template>
+  <form [formGroup]="movieForm" (ngSubmit)="SaveOrUpdateMovie()">
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">{{this.editMode ? "Update Movie":"New Movie"}}</h4>
+    <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+      <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+
+      <div class="container row">
+        <div class="mb-3">
+          <label for="name" class="form-label">Movie Name :</label>
+          <input id="name" class="form-control" type="text" formControlName="name"/>
+          <div class="alert alert-danger" role="alert"
+               *ngIf="movieForm.controls.name.touched && movieForm.controls.name.errors?.['required']">Name Required</div>
+          <div class="alert alert-danger" role="alert"
+               *ngIf="movieForm.controls.name.touched && movieForm.controls.name.errors?.['minlength']">At Least 4 charactors</div>
+        </div>
+        <div class="mb-3">
+          <label for="year" class="form-label">Year :</label>
+          <input id="year" class="form-control" type="text" formControlName="year" (keypress)="keyPress($event)"/>
+          <div class="alert alert-danger" role="alert"
+               *ngIf="movieForm.controls.year.touched && movieForm.controls.year.errors?.['required']">Year Required</div>
+          <div class="alert alert-danger" role="alert"
+               *ngIf="movieForm.controls.year.touched && movieForm.controls.year.errors?.['pattern']">Only Number</div>
+        </div>
+        <div class="mb-3">
+          <label for="director" class="form-label">Director :</label>
+          <input id="director" class="form-control" type="text" formControlName="director"/>
+        </div>
+
+      </div>
+
+  </div>
+    <div class="modal-footer">
+      <div class="mb-3">
+        <button class="btn btn-primary"
+                type="submit"
+                [disabled]="!movieForm.valid">{{this.editMode ? "Update":"Save"}}</button>
+        &nbsp;
+        <button class="btn btn-danger"
+                type="button"
+                (click)="closeMovieModal()">cancel</button>
+      </div>
+    </div>
+  </form>
+</ng-template>
+
+
+<table class="table table-bordered container-lg">
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Year</th>
+    <th>Director</th>
+    <th>Actioin</th>
+  </tr>
+  </thead>
+  <tbody>
+
+    <tr *ngFor="let movie of movies; index as i">
+      <td>{{movie.id}}</td>
+      <td>{{movie.name}}</td>
+      <td>{{movie.year}}</td>
+      <td>{{movie.director}}</td>
+      <td>
+        <button type="button" class="btn btn-primary" (click)="editClick(i,template)">Edit</button>
+        &nbsp;
+        <button type="button" class="btn btn-danger" (click)="deleteMovieClick(i)">delete</button> &nbsp;
+        <button type="button" class="btn btn-primary" (click)="movieDetailClick(i)">Details</button>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+

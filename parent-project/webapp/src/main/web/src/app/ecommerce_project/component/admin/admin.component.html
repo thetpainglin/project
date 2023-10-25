@@ -1,0 +1,101 @@
+
+ <div class="background" style="margin-top : 30px">
+  <div class="container">
+    <div class="row">
+
+      <!-- Modal -->
+      <ng-template #template>
+        <form [formGroup]="productForm" (ngSubmit)="SaveOrUpdateProduct()">
+          <div class="modal-header">
+            <h4 class="modal-title pull-left">{{this.editMode ? "Update Product":"New Product"}}</h4>
+            <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+              <span aria-hidden="true" class="visually-hidden">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+            <div class="container row">
+              <div class="mb-3">
+                <label for="name" class="form-label">Product Name :</label>
+                <input id="name" class="form-control" type="text" formControlName="name"/>
+                <div class="alert alert-danger" role="alert"
+                     *ngIf="productForm.controls.name.touched && productForm.controls.name.errors?.['required']">Name Required</div>
+                <div class="alert alert-danger" role="alert"
+                     *ngIf="productForm.controls.name.touched && productForm.controls.name.errors?.['minlength']">At Least 4 charactors</div>
+              </div>
+              <div class="mb-3">
+                <label for="image" class="form-label">Image :</label>
+                <input id="image" class="form-control" type="text" formControlName="image" />
+                <div class="alert alert-danger" role="alert"
+                     *ngIf="productForm.controls.image.touched && productForm.controls.image.errors?.['required']">image Required</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="price" class="form-label">Price :</label>
+                <input id="price" class="form-control" type="text" formControlName="price" (keypress)="keyPress($event)"/>
+                <div class="alert alert-danger" role="alert"
+                     *ngIf="productForm.controls.price.touched && productForm.controls.price.errors?.['required']">price Required</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="quantity" class="form-label">Quantity :</label>
+                <input id="quantity" class="form-control" type="text" formControlName="quantity" (keypress)="keyPress($event)"/>
+                <div class="alert alert-danger" role="alert"
+                     *ngIf="productForm.controls.quantity.touched && productForm.controls.quantity.errors?.['required']">quantity Required</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="details" class="form-label">Details :</label>
+                <input id="details" class="form-control" type="text" formControlName="details" />
+                <div class="alert alert-danger" role="alert"
+                     *ngIf="productForm.controls.details.touched && productForm.controls.details.errors?.['required']">Details Required</div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <div class="mb-3">
+              <button class="btn btn-primary"
+                      type="submit"
+                      [disabled]="!productForm.valid">{{this.editMode ? "Update":"Save"}}</button>
+              &nbsp;
+              <button class="btn btn-danger"
+                      type="button"
+                      (click)="closeMovieModal()">cancel</button>
+            </div>
+          </div>
+        </form>
+      </ng-template>
+      <!--/Modal -->
+        <div class="col mt-5">
+            <!--onClick={btnNewPlayer}-->
+            <div class="card mb-3"  style="width : 250px ; cursor : pointer" (click)="newMovieClick()">
+
+            <img class="card-img-top" style="width : 250px;height : 200px ; align-items : center" src="../assets/images/AddLogo.jpg" alt="Card image cap"/>
+
+            <div class="card-body">
+              <h5 class="card-title text-color fs-5">Add New Product</h5>
+
+            </div>
+          </div>
+
+        </div>
+
+          <div class="col mt-5" *ngFor="let p of product">
+            <div class="card mb-3" style="width : 250px">
+
+              <img class="card-img-top" [src]="p.image" style="width: 250px ; height: 150px; align-items: center" alt="Cart image"/><hr/>
+              <div class="card-body">
+                <h5 class="preText card-title">{{p.name}}</h5>
+                <div class="d-grid gap-1">
+                  <button class="btn btn-primary preText text-white" type="button" (click)="deleteProductBtnClick(p)">Delete</button>
+                  <button class="btn btn-primary preText text-white" type="button" (click)="this.editBtnClick(p)">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+</div>

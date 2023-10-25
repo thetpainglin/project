@@ -1,0 +1,10 @@
+<div>
+  <app-question-box (addItem)="addItem($event)"
+                    (updateItem)="updateItem($event)"
+                    [value]="question"></app-question-box>
+  <app-question-item-v2 *ngFor="let question of questions ,index as i" [question]="question"
+                        [index]="i"
+                        (newQuestionEvent)="onClickItem($event)"></app-question-item-v2>
+  <div *ngIf="questions.length == 0">No found Page</div>
+  <div *ngIf="isAdmin">I am admin Page</div>
+</div>

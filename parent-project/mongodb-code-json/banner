@@ -1,0 +1,85 @@
+[{
+  "_id": {
+    "$oid": "65051a7ebf68932285f7034b"
+  },
+  "image": "../assets/images/shoe_5.png",
+  "buttonText": "Show Details",
+  "product": "Beautiful Shoe",
+  "desc": "The best shoe in this season",
+  "smallText": "Light Shoe",
+  "midText": "summer shoe",
+  "largeText1": "best shoe",
+  "largeText2": "company that's grown from 270 to 480 employees in the last 12 months",
+  "discount": "25%",
+  "saleTime": "Dec 7 to Feb 9",
+  "product_id": {
+    "$ref": "ecommerces",
+    "$id": {
+      "$oid": "65051a7ebf68932285f7034a"
+    }
+  },
+  "_class": "com.ecommerce.model.Banner"
+},{
+  "_id": {
+    "$oid": "65052c426062b36b99c7f7a5"
+  },
+  "image": "../assets/images/headPhone_1.png",
+  "buttonText": "Show Details",
+  "product": "Shoe",
+  "desc": "The best shoe in this season",
+  "smallText": "Light Shoe",
+  "midText": "Good Shoe",
+  "largeText1": "Good Shoe Text 1",
+  "largeText2": "Good Shoe Text 2",
+  "discount": "20%",
+  "saleTime": "Dec 7 to Feb 9",
+  "product_id": {
+    "$ref": "ecommerces",
+    "$id": {
+      "$oid": "65052c426062b36b99c7f7a4"
+    }
+  },
+  "_class": "com.ecommerce.model.Banner"
+},{
+  "_id": {
+    "$oid": "65052c736062b36b99c7f7a7"
+  },
+  "image": "../assets/images/shoe_6.png",
+  "buttonText": "Show the best shoe",
+  "product": "Shoe",
+  "desc": "The best shoe in this season",
+  "smallText": "Light Shoe",
+  "midText": "Good Shoe",
+  "largeText1": "Good Shoe Text 1",
+  "largeText2": "Good Shoe Text 2",
+  "discount": "20%",
+  "saleTime": "Dec 7 to Feb 9",
+  "product_id": {
+    "$ref": "ecommerces",
+    "$id": {
+      "$oid": "65052c736062b36b99c7f7a6"
+    }
+  },
+  "_class": "com.ecommerce.model.Banner"
+},{
+  "_id": {
+    "$oid": "65052caf6062b36b99c7f7a9"
+  },
+  "image": "../assets/images/bluetooth_1.png",
+  "buttonText": "Show the best shoe",
+  "product": "Shoe",
+  "desc": "The best shoe in this season",
+  "smallText": "Light Shoe",
+  "midText": "Good Shoe",
+  "largeText1": "Good Shoe Text 1",
+  "largeText2": "Good Shoe Text 2",
+  "discount": "20%",
+  "saleTime": "Dec 7 to Feb 9",
+  "product_id": {
+    "$ref": "ecommerces",
+    "$id": {
+      "$oid": "65052caf6062b36b99c7f7a8"
+    }
+  },
+  "_class": "com.ecommerce.model.Banner"
+}]

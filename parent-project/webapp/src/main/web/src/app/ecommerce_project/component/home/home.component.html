@@ -1,0 +1,17 @@
+<div>
+<!--<HeroBanner bannerData={getAllBanner}/>-->
+  <app-hero-banner></app-hero-banner>
+  <div class="products-heading">
+    <h2>Best Selling Products</h2>
+    <p>Speakers of many variations</p>
+  </div>
+
+  <div class="products-container">
+
+    <app-product *ngFor="let product of products" [product]="product" ></app-product>
+
+
+  </div>
+  <app-footer-banner></app-footer-banner>
+
+  </div>

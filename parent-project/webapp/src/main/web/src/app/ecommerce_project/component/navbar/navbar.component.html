@@ -1,0 +1,39 @@
+<div class="navbar-container">
+  <!--
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a (click)="AdminPageBtnClick()"
+               class="nav-link active"
+               routerLink="admin"
+               routerLinkActive=""
+               ariaCurrentWhenActive="page"
+                style="color : black">Admin</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <p className="logo" style={{color: "#324d67" , fontSize: "20px",
+  fontWeight: "800"}}>
+  UI is copy ,but Logic is Own
+  </p>-->
+
+    <p class="logo p-nav">UI is copy</p>
+
+    <div >
+      <button type="button" class="cart-icon"
+      >
+
+        <fa-icon [icon]="shop" (click)="bagClick()"></fa-icon>
+      </button>
+
+      <span class="cart-item-qty">{{this.cartItemLength ? this.cartItemLength : 0}}</span>
+      <div *ngIf="cardClose"><app-cart (cardEmitter)="CloseCardBtnClick($event)"></app-cart></div>
+    </div>
+
+</div>

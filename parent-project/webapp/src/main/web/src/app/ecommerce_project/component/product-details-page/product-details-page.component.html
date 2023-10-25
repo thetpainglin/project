@@ -1,0 +1,65 @@
+<div *ngFor="let product of product">
+
+  <div class="product-detail-container">
+    <div>
+      <div class="image-container">
+
+        <img [src]="product.image" width="100" height="100" class="product-detail-image"/>
+      </div>
+
+      <div class="small-images-container">
+
+      </div>
+
+    </div>
+
+    <div class="product-detail-desc">
+      <h2 style="color: #324d67; font-size: 40px; font-weight: 800">{{product.name}}</h2>
+
+      <div class="reviews">
+        <div>
+
+          <fa-icon [icon]="star"></fa-icon>
+          <fa-icon [icon]="half"></fa-icon>
+          <fa-icon [icon]="rating"></fa-icon>
+        </div>
+        <p>(20)</p>
+      </div>
+      <h4>Details : </h4>
+      <p>{{product.details}}</p>
+      <p class="price">${{product.price}}</p>
+      <div class="quantity">
+        <h3>Quantity:</h3>
+        <p class="quantity-desc" >
+                            <span class="minus"
+                                  >
+                              <fa-icon [icon]="minus" (click)="this.decrementQuantity(product.id)"></fa-icon>
+
+                            </span>
+          <span class="num" >{{product.quantity}}</span>
+          <span class="plus" >
+            <fa-icon [icon]="plus" (click)="this.incrementQuantity(product.id)"></fa-icon>
+            </span>
+        </p>
+      </div>
+      <div class="buttons">
+        <button type="button" class="add-to-cart" (click)="AddToCardBtnClick(product.id)">Add to Cart</button>
+        <button type="button" class="buy-now" (click)="BuyNowBtnClick(product.id)">
+          Buy Now
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="maylike-products-wrapper">
+    <h2>You may also like</h2>
+    <div class="marquee">
+      <div class="maylike-products-container track">
+
+        <div *ngFor="let product of allProducts" >
+          <img [src]="product.image" width="150" height="150" class="product-image" (click)="this.detailHandler(product.id)"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

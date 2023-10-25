@@ -1,0 +1,206 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap";
+
+h3  {
+  background-color : whitesmoke;
+}
+
+.background{
+  background-color: rgba(28, 60, 79, 0.98);
+}
+.player-title ,.comment{
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-weight: bolder;
+  font-style: oblique;
+}
+
+.inbox{
+
+}
+
+.player-data{
+  text-transform: capitalize;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-weight: bolder;
+  font-style: oblique;
+}
+
+.movie-preview{
+  border-radius: 10px;
+  padding-top: 20px;
+  border: 1px solid dodgerblue ;
+  min-height: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+  color-adjust: exact;
+  background-color: azure;
+  color:burlywood;
+  font-family: 'Cantarell';
+  font-size: large;
+  font-style: oblique;
+  font-weight: bold;
+  box-sizing:content-box;
+  box-shadow: midnightblue inset;
+
+}
+.btn{
+  color: honeydew;
+  font-weight: bold;
+  background-color: dodgerblue;
+  border: none;
+  padding: 5px;
+  font-size:small;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor : pointer;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-float infinite 3s ease-in-out;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: rgb(112, 76, 182);
+}
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/********  Custom CSS data    *********/
+:root{
+  --primary-white : #fff;
+  --primary-orange:#f9ab00;
+  --primary-dark:rgba(255,255,255,0);
+}
+body{
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+}
+
+.logo{
+  width : 16.25rem;
+}
+
+.nav a.nav-link{
+  /* font-weight: 500;*/
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+nav ul li{
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--primary-white) !important;
+  border-top: 0.1875rem solid var(--primary-dark) ;
+}
+
+.navbar-brand {
+  max-width: 17.25rem;
+  padding : 0 !important;
+  height: 6rem !important;
+}
+
+.nav-link {
+  margin-right: 0.75rem ;
+  margin-left: 0.75rem ;
+  color: var(--primary-white) !important;
+}
+
+.navbar-nav > li > a.active , .navbar-nav > li > a.active:focus {
+  border-top: 0.1875rem solid var(--primary-orange) ;
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--primary-orange) ;
+}
+
+.font-sp{
+  height : 20px;
+}
+
+.awesomeIcon {
+  cursor: pointer;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+/*
+margin-top: 50px;
+  margin-left: 400px;
+ margin-right: 400px;
+*/
+.login-page{
+  text-align: center;
+  justify-content: center;
+  text-transform: capitalize;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-weight: bolder;
+  font-style: oblique;
+}
+.page-size{
+  margin-top: 67px;
+  padding-top:10px;
+  padding-left: 10px;
+}
+.text-color{
+  color: rgba(159, 43, 226, 0.78);
+  font-size: 25px;
+  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.preText{
+  color: rgba(64, 226, 188, 0.78);
+  font-size:medium;
+  font-family: "Segoe UI", "GeezaPro", "DejaVu Serif", sans-serif, "-apple-system", "BlinkMacSystemFont";
+  font-weight: bold;
+  font-style: italic;
+}
+
+
